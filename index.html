@@ -11,7 +11,7 @@
     <header>
         <nav class="container">
             <div class="logo">Anurag Prasad</div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div id="mobile-menu" class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -26,7 +26,7 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <section id="about" class="section">
             <div class="container">
                 <h1>Welcome to My Portfolio</h1>
@@ -39,26 +39,30 @@
             <div class="container">
                 <h2>Education</h2>
                 <table>
-                    <tr>
-                        <th>Degree</th>
-                        <th>Institution</th>
-                        <th>Year</th>
-                    </tr>
-                    <tr>
-                        <td>B.Tech, Computer Science</td>
-                        <td>Vellore Institute of Technology, Bhopal</td>
-                        <td>2021-2025</td>
-                    </tr>
-                    <tr>
-                        <td>Class XII</td>
-                        <td>Rukhmani Devi Public School, Bhopal</td>
-                        <td>2020</td>
-                    </tr>
-                    <tr>
-                        <td>Class X</td>
-                        <td>Holy Family Convent Sr. Sec. School, Bhopal</td>
-                        <td>2018</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Degree">B.Tech, Computer Science</td>
+                            <td data-label="Institution">Vellore Institute of Technology, Bhopal</td>
+                            <td data-label="Year">2021-2025</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Degree">Class XII</td>
+                            <td data-label="Institution">Rukhmani Devi Public School, Bhopal</td>
+                            <td data-label="Year">2020</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Degree">Class X</td>
+                            <td data-label="Institution">Holy Family Convent Sr. Sec. School, Bhopal</td>
+                            <td data-label="Year">2018</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
@@ -67,31 +71,35 @@
             <div class="container">
                 <h2>Certifications</h2>
                 <table>
-                    <tr>
-                        <th>Certification</th>
-                        <th>Score</th>
-                        <th>Link</th>
-                    </tr>
-                    <tr>
-                        <td>AWS Certified Cloud Practitioner (CLF-C02)</td>
-                        <td>838/1000</td>
-                        <td><a href="https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft Certified Azure Administrator (AZ-104)</td>
-                        <td>836/1000</td>
-                        <td><a href="https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
-                    </tr>
-                    <tr>
-                        <td>Introduction to Internet of Things (NPTEL)</td>
-                        <td>90/100</td>
-                        <td><a href="https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
-                    </tr>
-                    <tr>
-                        <td>The Bits & Bytes of Computer Networking (Coursera)</td>
-                        <td>97.25/100</td>
-                        <td><a href="https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Certification</th>
+                            <th>Score</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Certification">AWS Certified Cloud Practitioner (CLF-C02)</td>
+                            <td data-label="Score">838/1000</td>
+                            <td data-label="Link"><a href="https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Certification">Microsoft Certified Azure Administrator (AZ-104)</td>
+                            <td data-label="Score">836/1000</td>
+                            <td data-label="Link"><a href="https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Certification">Introduction to Internet of Things (NPTEL)</td>
+                            <td data-label="Score">90/100</td>
+                            <td data-label="Link"><a href="https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Certification">The Bits & Bytes of Computer Networking (Coursera)</td>
+                            <td data-label="Score">97.25/100</td>
+                            <td data-label="Link"><a href="https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>

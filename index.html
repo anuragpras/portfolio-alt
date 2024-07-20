@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anurag Prasad - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Anurag Prasad</div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="container">
+            <div class="logo">Anurag Prasad</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="section">
             <div class="container">
                 <h1>Welcome to My Portfolio</h1>
                 <p>Computer Science undergraduate at VIT Bhopal with a passion for AI/ML, data science, and software development. I'm eager to learn and contribute my skills to innovative technical roles.</p>
@@ -32,7 +35,7 @@
             </div>
         </section>
 
-        <section id="education">
+        <section id="education" class="section">
             <div class="container">
                 <h2>Education</h2>
                 <table>
@@ -60,7 +63,7 @@
             </div>
         </section>
 
-        <section id="certifications">
+        <section id="certifications" class="section">
             <div class="container">
                 <h2>Certifications</h2>
                 <table>
@@ -72,35 +75,35 @@
                     <tr>
                         <td>AWS Certified Cloud Practitioner (CLF-C02)</td>
                         <td>838/1000</td>
-                        <td><a href="https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link" target="_blank" class="btn">View Certificate</a></td>
+                        <td><a href="https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
                     </tr>
                     <tr>
                         <td>Microsoft Certified Azure Administrator (AZ-104)</td>
                         <td>836/1000</td>
-                        <td><a href="https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link" target="_blank" class="btn">View Certificate</a></td>
+                        <td><a href="https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
                     </tr>
                     <tr>
                         <td>Introduction to Internet of Things (NPTEL)</td>
                         <td>90/100</td>
-                        <td><a href="https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link" target="_blank" class="btn">View Certificate</a></td>
+                        <td><a href="https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
                     </tr>
                     <tr>
                         <td>The Bits & Bytes of Computer Networking (Coursera)</td>
                         <td>97.25/100</td>
-                        <td><a href="https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link" target="_blank" class="btn">View Certificate</a></td>
+                        <td><a href="https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link" class="btn" target="_blank">View Certificate</a></td>
                     </tr>
                 </table>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="section">
             <div class="container">
                 <h2>Projects</h2>
                 <div id="projects-container"></div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <div class="container">
                 <h2>Contact</h2>
                 <div class="contact-info">
@@ -115,7 +118,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Anurag Prasad. All rights reserved.</p>
+            © 2024 Anurag Prasad. All rights reserved.
         </div>
     </footer>
 

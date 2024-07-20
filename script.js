@@ -84,3 +84,32 @@ projects.forEach(project => {
     `;
     projectsContainer.appendChild(projectElement);
 });
+
+// Hamburger menu functionality
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+// Close mobile menu when a link is clicked
+const navLinks = document.querySelectorAll('.nav-list a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navList.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    });
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
